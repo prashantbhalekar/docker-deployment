@@ -3,7 +3,7 @@ const express = require("express");
 const app = express(express.json());
 
 app.get("", (req, res) => {
-  res.send("Deployment With Docker and Github Action - Testing!!!");
+  res.send("Docker Deployment Without Github Action!!!");
 });
 
 app.get("/json", (req, res) => {
@@ -26,6 +26,6 @@ app.get("/msg1", (req, res) => {
   });
 });
 
-app.listen("3000", () => {
-  console.log("Server listening on port 3000");
+app.listen("4000", () => {
+  console.log("Server listening on port 4000");
 });
